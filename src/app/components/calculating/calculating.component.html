@@ -1,1 +1,62 @@
-<p>calculating works!</p>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-6">
+        <div class="row">
+  <div class="card">
+        <div class="card-body">
+          <div class="row d-flex justify-content-center mb-4">
+            <div class="col-6">
+              <span class="badge bg-success font-monospace salary--total">
+                {{ calcTotalWaste() }}</span
+              >
+            </div>
+          </div>
+          <h6 class="card-subtitle text-center font-monospace mb-2 text-muted">
+            El presupuesto es el total mensual tras gastos fijos
+          </h6>
+        </div>
+      </div>
+        </div>
+        <div class="row">
+         
+        </div>
+    
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+            <h5 class="text-muted">Gastos fijos contemplados:</h5>
+         <ul class="list-group">
+         <li class="list-group-item">Alquiler: <span class="badge bg-danger text-light">{{rent}} €</span> </li>
+         <li class="list-group-item">Luz <span class="badge bg-warning text-dark">{{light}} €</span></li>
+         <li class="list-group-item">Garaje: <span class="badge bg-warning text-dark">{{garage}} €</span> </li>
+         <li class="list-group-item">Agua y gas <span class="badge bg-warning text-dark">{{water}} €</span> </li>
+         <li class="list-group-item">Internet: <span class="badge bg-warning text-dark">{{internet}} €</span> </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-2 mb-2 d-flex justify-content-end">
+  </div>
+  <div class="row justify-content-center mt-5">
+    <div class="card">
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Concepto</th>
+      <th scope="col">Cantidad (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">01/01/01</th>
+      <td>Compra Mercadona</td>
+      <td><span class="badge bg-danger text-light">- 250 €</span></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </div>
+

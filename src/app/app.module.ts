@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CalculatingComponent } from './components/calculating/calculating.component';
 import { TableWasteComponent } from './components/calculating/components/table-waste/table-waste.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { TableWasteComponent } from './components/calculating/components/table-w
     CalculatingComponent,
     TableWasteComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,1 +1,24 @@
-<p>home works!</p>
+<div class="container vh-100">
+    <div class="row d-flex align-items-center justify-content-center vh-100">
+        <div class="col-6 rounded d-flex flex-column border p-4 bg-light">
+            <div class="row">
+                <h3 class="text-center">Contabilidad Mensual</h3>
+            </div>
+            <div class="row">
+                <label>
+                    <p class="text-center">Presupuesto mensual Carla</p>
+                </label>
+                <input class="mt-3 mb-3" [formControl]="salary" type="number" />
+            </div>
+            <div class="row">
+                <label>
+                    <p class="text-center">Presupuesto mensual Iván</p>
+                </label>
+                <input class="mt-3 mb-3" [formControl]="salary" type="number" />
+                <button class="btn btn-primary bg-dark" (click)="putSalary()">
+                    Establecer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
